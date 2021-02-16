@@ -39,6 +39,10 @@
     font-family: Georgia, serif;
     color: rgb(0, 0, 0);
   }
+  .dark-mode {
+            background-color: black;
+            color: white;    
+        }
   
  
   </style>
@@ -54,6 +58,14 @@
         <li><a href="otayhteytta.html">Anna palautetta!</a></li>
     </div>
 </div>
+<script>
+  function myFunction() {
+     var element = document.body;
+     element.classList.toggle("dark-mode");
+  }
+  </script>
+
+<button onclick="myFunction()">Toggle dark mode</button>
 <h1>Avainpolku Oy</h1>
 
 <h2>Aikuiselle</h2>
