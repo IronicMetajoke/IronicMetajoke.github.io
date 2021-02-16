@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anna palautetta!</title>
+        <link rel="shortcut icon" href="Work_icon.ico">
+        <link rel ="stylesheet" href="yhteys.css">
+        <link rel="stylesheet" href="nappula.css">
+        <style>
+
+        body {
+        background-color: lightblue;
+        }
+
+        h1 {
+           text-align: center;
+           font-family: 'Times New Roman', serif;
+           font-weight: bold;
+           text-transform: uppercase;
+           border-bottom: 1px solid #57b1dc;
+           margin-top: 30px;
+       }
+    
+       p {
+        text-align: center;
+        font-family: Georgia, serif;
+        font-weight: normal;
+        text-align: center;
+       }
+
+        h2 {text-align: center;
+           font-family: cursive;
+           font-weight: bold;
+           text-transform: uppercase;
+           border-bottom: 1px solid #57b1dc;
+           margin-top: 30px;
+        }
+
+        h3 {text-align: center;
+
+        }
+
+        h4 {text-align: center;
+           font-family: cursive;
+           font-weight: bold;
+           text-transform: uppercase;
+           border-bottom: 1px solid #57b1dc;
+           margin-top: 30px;
+           }
+
+      
+        .dark-mode {
+            background-color: black;
+            color: white;    
+        }
+
+    nav ul li {
+      flex: none;
+    }
+    img {
+    max-width: 25%;
+    }
+        </style>
+    </head>
+
+<body>
+    <div class="valikko">
+    <button class="nappi">Valikko</button>
+    <div class="nappisisalto">
+        <li><a class="active" href="Etusivu.html">Etusivu</a></li>
+        <li><a href="Hae_toihin.html">Hae töihin!</a></li>
+        <li><a href="NUORI.html">Nuorille!</a></li>
+        <li><a href="VANHEMPI.html">Aikuisille!</a></li>
+        <li class="right"><a href="message.html">Meistä</a></li>
+        <li><a href="otayhteytta.html">Anna palautetta!</a></li>
+    </div>
+    </div>
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+
+
+<h1>Anna palautetta!</h1>
+
+
+<p>Meille voi antaa palautetta tältä sivulta löytyvästä palautelomakkeesta!</p>
+
+
+<div class="container">
+    <form action="action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="nimi">Etu- ja sukunimesi</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="nimi" name="etu-jasukunimi" placeholder="esim. Matti Meikäläinen">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="sposti">Sähköpostiosoite</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="sposti" name="sposti" placeholder="Sähköpostiosoitteesi">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+        </div>
+        <div class="col-75">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Palautteesi</label>
+        </div>
+        <div class="col-75">
+          <textarea id="palaute" name="palaute" placeholder="Kirjoita tähän palautteesi!" style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Lähetä">
+      </div>
+    </form>
+  </div>
+

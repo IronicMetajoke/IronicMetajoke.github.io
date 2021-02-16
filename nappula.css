@@ -1,0 +1,48 @@
+  /* Valikko nappulan muokkaus*/
+  .nappi {
+    background-color: green;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* sisällön sijainti */
+  .valikko {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* valikon sisällön ulkonäkö */
+  .nappisisalto {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Valikon sisällä olevat linkit */
+  .nappisisalto a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: rgb(46, 46, 48);
+  }
+  
+  /* Kun hoveraa linkkiä minkä väriseksi vaihtuu */
+  .nappisisalto a:hover {background-color: rgb(73, 179, 96)}
+  
+  /* Näyttää valikon kun hoveraa */
+  .valikko:hover .nappisisalto {
+    display: block;
+  }
+  
+  /* Valikko nappulan taustan värin vaiho, kun hoverataan valikkoa */
+  .valikko:hover .nappi {
+    background-color: green;
+  }
