@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Times New Roman', serif;
+  }
+  
+  /* kaikki vierekkäin */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Poistetaan väleistä tilaa */
+  .rivi {margin: 0 -5px;}
+  
+  /* poistaa tilaa */
+  .rivi:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* korttien tyyli + väli yläpuolelle, jotta alhaalla oleva ei ole kiinni */
+  .kortit {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 10px; 
+    padding: 16px;
+    text-align: center;
+    background-color: gray;
+  }
+  
+  /* Responsiivisuus */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
