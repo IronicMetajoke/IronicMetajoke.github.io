@@ -60,6 +60,26 @@
     img {
     max-width: 25%;
     }
+    .flags {
+                top: 10px;
+                right: 5px;
+                z-index: 99;
+            }
+            .flags ul {
+                margin: 0;
+                padding-left: 0;
+            }
+            .flags ul li {
+                margin-left: 5px;
+                list-style-type: none;
+                display: inline-block;
+            }
+          
+            .responsive {
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+}
         </style>
     </head>
     
@@ -75,6 +95,19 @@
             <li><a href="otayhteytta.html">Anna palautetta!</a></li>
         </div>
       </div>
+      <div class="flags">
+        <ul>
+            <li class = "right">
+                <a href="etusivuENG.html">
+                    <img src="ENG.webp" alt=English class = "responsive">
+                </a>
+            </li>
+            <li>
+                <a href="etusivu.html">
+                    <img w src="FIN.webp" alt=Finnish class = "responsive"></a>
+            </li>
+        </ul>
+    </div>
         <script>
             function myFunction() {
                var element = document.body;
